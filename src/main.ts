@@ -1,7 +1,7 @@
 import { Order } from "./domain/checkout/entity/order";
 import { OrderItem } from "./domain/checkout/entity/order-item";
-import { Address } from "./domain/entity/address";
-import { Customer } from "./domain/entity/customer";
+import { Customer } from "./domain/customer/entity/customer";
+import { Address } from "./domain/customer/value-object/address";
 
 
 const customer = new Customer("customer-1", "John Doe");
