@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import { Customer } from "../entity/customer";
+import { Customer } from "../../entity/customer";
 import { Order } from "../entity/order";
 import { OrderItem } from "../entity/order-item";
 
