@@ -26,8 +26,10 @@ export class OrderRepository implements OrderRepositoryInterface {
   }
 
   async update(entity: Order): Promise<void> {
+
     const orderModel = await OrderModel.findOne({
       where: { id: entity.id },
+      include: ["items"],
     });
 
     if (!orderModel) {
@@ -53,8 +55,6 @@ export class OrderRepository implements OrderRepositoryInterface {
         order_id: entity.id,
       }))
     );
-
-    await orderModel.reload();
   }
 
   async find(id: string): Promise<Order> {
