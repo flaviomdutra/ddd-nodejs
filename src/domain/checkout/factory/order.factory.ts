@@ -25,8 +25,6 @@ export class OrderFactory {
       );
     });
 
-    const order = new Order(props.id, props.customerId, items);
-
-    return order;
+    return new Order(props.id, props.customerId, items);
   }
 }
