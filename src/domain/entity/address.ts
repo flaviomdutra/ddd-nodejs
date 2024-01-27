@@ -28,6 +28,22 @@ export class Address {
     }
   }
 
+  get street() {
+    return this._street;
+  }
+
+  get number() {
+    return this._number;
+  }
+
+  get zip() {
+    return this._zip;
+  }
+
+  get city() {
+    return this._city;
+  }
+
   toString() {
     return `${this._street} ${this._number}, ${this._zip} ${this._city}`;
   }

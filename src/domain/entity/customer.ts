@@ -42,6 +42,10 @@ export class Customer {
     this._active = false;
   }
 
+  changeAddress(address: Address) {
+    this._address = address;
+  }
+
   addRewardPoints(points: number) {
     this._rewardPoints += points;
   }
